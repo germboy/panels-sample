@@ -1,0 +1,30 @@
+// MainView.less
+//
+@import '~@enact/moonstone/styles/mixins.less';
+@import '~@enact/moonstone/styles/variables.less';
+@import '~@enact/moonstone/styles/skin.less';
+
+.panel {
+	// styles go here
+}
+
+.gridListImageItem {
+	box-sizing: border-box;
+	border-width: @moon-gridlist-item-border-width;
+	border-style: solid;
+	border-color: transparent;
+	//padding-bottom: @moon-gridlist-item-two-captions-padding-bottom;
+	text-align: center;
+
+	.image {
+		box-sizing: border-box;
+		display: block; // leaving this to prevent whitespace between inline-block elements
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		top: 0;
+		padding-bottom: @moon-gridlist-item-one-caption-padding-bottom;
+		position: absolute;
+		z-index: -1;
+	}
+}
